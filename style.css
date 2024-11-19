@@ -1,0 +1,652 @@
+/* From Uiverse.io by akshat-patel28 */
+.button-container {
+  display: flex;
+  background-color: rgb(248, 106, 165);
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 20%;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-img {
+  width: 100%;
+  height: 35vh;
+  background-image: url("./img/fnd1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 0, 140, 0.836);
+}
+
+.title {
+  text-shadow: 0 4px 8px rgba(211, 0, 130, 0.774);
+}
+.title-p {
+  text-shadow: 0 4px 8px rgba(48, 4, 31, 0.774);
+}
+
+/*Accueil*/
+
+.container-accueil {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 8%;
+}
+.img-accueil {
+  filter: drop-shadow(-13px 5px 4px rgba(253, 167, 220, 0.774));
+}
+
+.presentation-box {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.342);
+  max-width: 50%;
+  margin: auto;
+}
+.btn-accueil {
+  width: 26%;
+  border-radius: 25% 10%;
+  background-color: rgba(240, 193, 230, 0.541);
+  margin: auto;
+  transition: all 0.3s ease;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  font-weight: 500;
+}
+.btn-accueil:hover {
+  width: 21%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.texte-presentation p {
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+.suggestion-link {
+  text-decoration: none;
+  color: black;
+}
+
+.page {
+  position: relative;
+  z-index: 1000;
+  color: black;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
+.olivier {
+  background-image: url("./img/olivier.jpg");
+  width: 100%;
+  height: 100vh;
+  opacity: 0.06;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(1px);
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+}
+
+/*dispotition elements articles a gauche et droite*/
+.element1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 45%;
+  top: 68%;
+  left: 10%;
+  font-size: 1rem;
+}
+
+.element1 img {
+  margin-right: 1rem;
+  border-radius: 30px;
+  width: 50%;
+  height: 20%;
+}
+.element1 h5 {
+  margin-bottom: 24px;
+  position: relative;
+}
+.element1 h5::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: rgb(252, 54, 176);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.element2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 45%;
+  top: 110%;
+  right: 5%;
+  font-size: 1rem;
+}
+
+.element2 img {
+  margin-right: 1rem;
+  border-radius: 30px;
+  width: 50%; 
+  height: 20%;
+}
+.element2 h5 {
+  margin-bottom: 24px;
+  position: relative;
+}
+.element2 h5::after {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: rgb(252, 54, 176);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.8s;
+}
+.reveal-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-3 {
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .element1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    top: 70%;
+    left: 5%;
+    font-size: 1rem;
+  }
+  .element2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 45%;
+    top: 100%;
+    right: 5%;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .element1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    top: 60%;
+    left: 5%;
+    font-size: 0.8rem;
+  }
+  .element2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 70%;
+    top: 100%;
+    right: 5%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  /*page accueil*/
+  .title {
+    text-shadow: 0 10px 10px rgba(2, 2, 2, 0.966);
+  }
+  .title-p {
+    text-shadow: 0 10px 10px rgba(8, 8, 8, 0.986);
+  }
+  .container-accueil {
+    flex-direction: column-reverse;
+  }
+  .img-accueil {
+    min-width: 50%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .presentation-box {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .btn-accueil {
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .btn-accueil:hover {
+    width: 31%;
+  }
+
+  /*suggestion*/
+  .element1 {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 100%;
+    top: 63%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+  .element1 img{
+    width: 23%;
+  }
+  .element2 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 100%;
+    top: 110%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 0.8rem;
+  }
+  .element2 img{
+    width: 23%;
+  }
+/* la carte*/
+  .menu-header p.price{
+    font-size: 0.7rem;
+  }
+  .menu-header h3{
+    font-size: 0.4rem;
+  }
+
+/* les avis*/
+
+.content{
+  text-align: center;
+}
+
+}
+
+/*page Avis*/
+
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 60%;
+}
+
+.btn-avis {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 10px 20px;
+  background-color: rgba(32, 32, 31, 0.541);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-avis:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.123);
+}
+
+/*les commentaires*/
+
+/* Style pour les étoiles */
+.star-rating {
+  direction: rtl;
+  display: inline-flex;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating label::before {
+  content: "★";
+}
+
+.star-rating input:checked ~ label {
+  color: #f5c518;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #f5c518;
+}
+
+/* Style général pour la section des commentaires */
+.commentairesSection {
+  margin-top: 20px;
+}
+
+/* Style pour chaque commentaire */
+.commentairesSection .avis {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  border-left: 5px solid #f12b9fce;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Effet de survol pour chaque commentaire */
+.commentairesSection .avis:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le pseudo */
+.commentairesSection .avis h4 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour le commentaire */
+.commentairesSection .avis p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Style pour la date */
+.commentairesSection .avis small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* Style pour les étoiles dans les avis affichés */
+.commentairesSection .avis .star-rating {
+  direction: ltr;
+  display: inline-flex;
+  font-size: 1.5em;
+}
+.commentairesSection .avis .star-rating {
+  color: #f5c518;
+  font-size: inherit;
+}
+
+/*page carte*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.menu-section {
+  margin: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section p {
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  margin: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.price {
+  color: rgba(0, 0, 0, 0.425);
+  font-weight: bold;
+}
+
+.description {
+  margin: 10px 0 0;
+  font-style: italic;
+}
+
+/*Reservation*/
+
+.reservation-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.541);
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-reservation:hover {
+  background-color: #555;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-group {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  width: 60%;
+}
+.adresse-section {
+  text-align: center;
+  width: 100%;
+}
+.form-group-adresse {
+  text-align: center;
+  margin: 4px;
+}
+.contact-telephone {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.map-section {
+  margin: auto;
+  margin-bottom: 15px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map-section img {
+  margin: auto;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.541);
+  cursor: zoom-in;
+}
+/*le footer*/
+
+.footer {
+  background-color: #333333da;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: left;
+}
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+.footer-section h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+  font-size: 1rem;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  font-size: 0.8rem;
+
+  margin-bottom: 10px;
+}
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+.footer-section p {
+  margin: 5px 0;
+  font-size: 0.8rem;
+}
